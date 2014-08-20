@@ -1,12 +1,13 @@
 
 var websrv = require('websrv');
-var sockets = require('./src/sockets');
-var routes = require('./src/routes');
+var sockets = require('./app/sockets');
+var routes = require('./app/routes');
 
 
 var server = new websrv.Server({
     cookieSecret: '123456',
-    viewEngine: 'ejs'
+    viewEngine: 'jade',
+    viewPath: './app/views'
 });
 
 server.routes(routes.default({

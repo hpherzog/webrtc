@@ -10,18 +10,24 @@
     "type": "git",
     "url": "https://github.com/hpherzog/webrtc.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Hans-Peter Herzog",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hpherzog/webrtc/issues"
   },
   "homepage": "https://github.com/hpherzog/webrtc",
   "dependencies": {
-    "websrv": "0.0.1"
+    "jade": "^1.5.0",
+    "underscore": "^1.6.0",
+    "underscore.string": "^2.3.3",
+    "websrv": "git+https://github.com/hpherzog/websrv.git#master"
   },
   "devDependencies": {
+    "bootstrap": "^3.2.0",
     "gulp": "^3.8.7",
     "gulp-browserify": "^0.5.0",
-    "websrv-client": "0.0.1"
+    "gulp-rename": "^1.2.0",
+    "jquery": "^2.1.1",
+    "websrv-client": "git+https://github.com/hpherzog/websrv-client.git#master"
   }
 }
