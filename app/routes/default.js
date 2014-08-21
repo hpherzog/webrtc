@@ -7,7 +7,9 @@ module.exports = function(options) {
 
         app.all('/', function(req, res){
 
-            res.render('index');
+            res.render('index', {
+                pageTitle: 'Index'
+            });
         });
     }
 };
